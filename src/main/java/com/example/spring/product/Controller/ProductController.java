@@ -48,6 +48,11 @@ public class ProductController {
 	{
 		return productservice.deleteAll();
 	}
+	@GetMapping("/home")
+	public String home()
+	{
+		return "hii sweta";
+	}
 	
 
 }
