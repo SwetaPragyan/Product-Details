@@ -37,10 +37,10 @@ public class ProductController {
 	{
 		return productservice.saveProducts(product);
 	}
-	@GetMapping("/hello")
-	public String hello()
+	@GetMapping("/first")
+	public String first()
 	{
-		return "hii chunu";
+		return "hello chunu";
 	}
 	
 	@DeleteMapping("/removeProduct/{id}")
@@ -53,11 +53,6 @@ public class ProductController {
 	public String removeAllProducts()
 	{
 		return productservice.deleteAll();
-	}
-	@GetMapping("/home")
-	public String home()
-	{
-		return "hii sweta";
 	}
 	
 
