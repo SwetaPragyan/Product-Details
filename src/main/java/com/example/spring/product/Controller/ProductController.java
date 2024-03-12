@@ -37,6 +37,12 @@ public class ProductController {
 	{
 		return productservice.saveProducts(product);
 	}
+	@GetMapping("/hello")
+	public String hello()
+	{
+		return "hii chunu";
+	}
+	
 	@DeleteMapping("/removeProduct/{id}")
 	public String removeProduct(@PathVariable int id)
 	{
